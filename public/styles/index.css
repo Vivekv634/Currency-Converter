@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6570c7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(242, 235, 235);
+    backdrop-filter: blur(2px);
+    padding: 1.5rem 3rem;
+    border-radius: 20px;
+}
+
+.main-heading {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    margin-top: 1rem;
+}
+
+.reverse,
+.output {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#From,
+#To {
+    width: 100%;
+    background-color: transparent;
+    padding: .7rem;
+    padding-bottom: 1rem;
+    color: black;
+    border: 1px solid rgb(73, 67, 67);
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.reverse-icon {
+    transform: rotate(90deg);
+    cursor: pointer;
+    height: 1rem;
+}
+
+.reverse-icon:hover {
+    color: rgb(155, 151, 151);
+}
+
+.reverse-icon:active {
+    transform: rotate(270deg);
+}
+
+.submit {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #6570c7;
+    color: rgb(242, 235, 235);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit:hover {
+    background-color: #4554c2;
+}
+
+.converter>input[type="text"] {
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(73, 67, 67);
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:451px) {
+    .container {
+        height: 100%;
+        border-radius: 0;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .main-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+}
