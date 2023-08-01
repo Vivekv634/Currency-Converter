@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import axios from "axios";
 
 const app = express();
-const PORT = 5500;
+const PORT = 3000;
 const BASE_URL = " https://v6.exchangerate-api.com/v6/82ed90b1610d9b921739e28e/pair/";
 
 app.use(express.static("public"));
