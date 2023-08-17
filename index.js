@@ -22,7 +22,6 @@ app.post("/", async (req, res) => {
         result: result
     }
     res.render("index.ejs", { data: params });
-    res.redirect('/');
 });
 
 app.listen(PORT, () => {
