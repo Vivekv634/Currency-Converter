@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
-app.post("/exchange", async (req, res) => {
+app.post("/", async (req, res) => {
     const response = await axios.get(`${BASE_URL}${req.body.From}/${req.body.To}/${req.body.amount}`);
     const result = response.data;
     console.log(result);
